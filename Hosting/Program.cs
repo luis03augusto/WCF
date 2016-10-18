@@ -16,7 +16,7 @@ namespace Hosting
             ServiceHost host = new ServiceHost(typeof (ClienteService));
             Uri endereco = new Uri("http://localhost:8080/clientes");
 
-            host.AddServiceEndpoint(typeof(IclienteService), new BasicHttpBinding(), endereco);
+            host.AddServiceEndpoint(typeof(IClienteService), new BasicHttpBinding(), endereco);
 
             try
             {
